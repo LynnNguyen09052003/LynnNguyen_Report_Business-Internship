@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+}
+
+.back-ground {
+    width: 100%;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.back-ground h1 {
+    font-size: 40px;
+    color: blue;
+}
+
+.back-ground p span#second {
+    font-size: 40px;
+}
+
+.back-ground p span#milisecond {
+    font-size: 40px;
+}
+
+.back-ground p {
+    font-size: 40px;
+}
+
+.back-ground .button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.back-ground .button button#start {
+    background-color: aqua;
+    color: blue;
+    border-color: yellow;
+    width: 100px;
+    height: 50px;
+}
+
+.back-ground .button button#pause {
+    background-color: aqua;
+    color: blue;
+    border-color: yellow;
+    width: 100px;
+    height: 50px;
+}
+
+.back-ground .button button#stop {
+    background-color: aqua;
+    color: blue;
+    border-color: yellow;
+    width: 100px;
+    height: 50px;
+}
+
+.back-ground .button button#reset {
+    background-color: aqua;
+    color: blue;
+    border-color: yellow;
+    width: 100px;
+    height: 50px;
+}

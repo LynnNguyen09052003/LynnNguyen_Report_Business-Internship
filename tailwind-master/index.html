@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="script.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCss</title>
+</head>
+
+<body class="bg-red-500">
+    <nav class="bg-teal-50 max-w-full text-black p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-8">
+                <img src="/my-tailwind-project/img/Frame.png" alt="img-1">
+                <div class="text-4xl font-bold font-rubik">Air</div>
+                <button id="menu-toggle" class="lg:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+                <ul class="hidden lg:flex items-center font-rubik flex space-x-6">
+                    <li><a href="#" class="hover:text-blue-200">Demos</a></li>
+                    <li><a href="#" class="hover:text-blue-200">Feature</a></li>
+                    <li><a href="#" class="hover:text-blue-200">About</a></li>
+                    <li><a href="#" class="hover:text-blue-200">Blog</a></li>
+                    <li><a href="#" class="hover:text-blue-200">Testimonial</a></li>
+                    <li><a href="#" class="hover:text-blue-200">Contact</a></li>
+                </ul>
+            </div>
+            <button class="hidden lg:inline-block bg-sky-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+      Get Started Free
+    </button>
+        </div>
+        <div id="mobile-menu" class="mt-3 hidden flex-col space-y-2 lg:hidden text-center">
+            <a href="# " class="block py-2 hover:text-blue-400 ">Demos</a>
+            <a href="# " class="block py-2 hover:text-blue-400 ">Feature</a>
+            <a href="# " class="block py-2 hover:text-blue-400 ">About</a>
+            <a href="# " class="block py-2 hover:text-blue-400 ">Blog</a>
+            <a href="# " class="block py-2 hover:text-blue-400 ">Testimonial</a>
+            <a href="# " class="block py-2 hover:text-blue-400 ">Contact</a>
+            <button class="bg-sky-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 w-full ">
+      Get Started Free
+    </button>
+        </div>
+    </nav>
+    <section id="slide-1" class="bg-teal-50 max-w-full  text-black p-8 md:p-6 lg: p-4 flex ">
+        <img src="img/Hero image.png" alt="img-2" class="w-full max-w-lg hidden lg:block">
+        <div id="card-1" class="flex flex-col items-start justify-center text-left p-4 gap-4">
+            <h1 class="text-base sm:text-lg md:text-2xl lg:text-4xl font-bold font-rubik">Discover How Trending Apps Can Benefit You</h1>
+            <ul class="pr-[100px] text-base sm:text-lg md:text-xl lg:text-2xl font-rubik">Boost your productivity with a simple to-do app. A mobile application Budgeting for your personal life</ul>
+            <aside class="flex flex-row  gap-4 items-center justify-center text-center">
+                <img src="img/gg play.png" alt="img-3" class="w-24 h-10">
+                <img src="img/app store.png" alt="img-4" class="w-24 h-10">
+            </aside>
+        </div>
+    </section>
+    <section id="slide-2" class="flex flex-col bg-neutral-50 max-w-full text-black p-16 gap-20">
+        <h1 class="text-base sm:text-lg md:text-2xl lg:text-4xl font-bold font-rubik text-center">
+            With nearly 500 paying customers, our service is trusted
+        </h1>
+        <div class="overflow-hidden whitespace-nowrap">
+            <div id="card-2" class="animate-marquee flex flex-row justify-around gap-8 border-solid w-[200%] ">
+                <img src="img/Frame-1.png" alt="img-5" class="w-14 h-10 sm:w-20 md:w-24 md:h-12 lg:w-28 lg:h-16 xl:w-32 xl:h-16">
+                <img src="img/Frame-2.png" alt="img-6" class="w-14 h-10 sm:w-16 md:w-20 md:h-12 lg:w-22 lg:h-16 xl:w-28 xl:h-16">
+                <img src="img/Frame-3.png" alt="img-7" class="w-14 h-10 sm:w-16 md:w-20 md:h-12 lg:w-22 lg:h-16 xl:w-28 xl:h-16">
+                <img src="img/Frame-4.png" alt="img-8" class="w-14 h-10 sm:w-20 md:w-24 md:h-12 lg:w-28 lg:h-16 xl:w-32 xl:h-16">
+                <!-- tạo hiệu ứng lặp -->
+                <img src="img/Frame-1.png" alt="img-5" class="w-14 h-10 sm:w-20 md:w-24 md:h-12 lg:w-28 lg:h-16 xl:w-32 xl:h-16">
+                <img src="img/Frame-2.png" alt="img-6" class="w-14 h-10 sm:w-16 md:w-20 md:h-12 lg:w-22 lg:h-16 xl:w-28 xl:h-16">
+                <img src="img/Frame-3.png" alt="img-7" class="w-14 h-10 sm:w-16 md:w-20 md:h-12 lg:w-22 lg:h-16 xl:w-28 xl:h-16">
+                <img src="img/Frame-4.png" alt="img-8" class="w-14 h-10 sm:w-20 md:w-24 md:h-12 lg:w-28 lg:h-16 xl:w-32 xl:h-16">
+            </div>
+        </div>
+    </section>
+    <section id="slide-3" class="bg-white max-w-full text-black p-8 md:p-6 lg:p-4 flex flex-col justify-center items-center gap-3">
+        <h1 class="text-base sm:text-lg md:text-2xl lg:text-4xl font-bold font-rubik text-center">
+            <span class="block">A brief description of how it works</span>
+            <span class="block">Air apart from others</span>
+        </h1>
+
+        <p class="text-base sm:text-lg md:text-md lg:text-2xl font-rubik text-center max-w-4xl">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+        </p>
+
+        <div id="layout" class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 w-full p-4 bg-gray-50">
+            <!-- Box 1 -->
+            <div id="box-1" class="border border-line rounded-lg shadow-lg text-black p-4 bg-white">
+                <img src="img/F1.png" alt="Innovative Solution" class="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 h-auto mb-4" />
+                <h2 class="text-base sm:text-lg md:text-xl lg:text-3xl font-bold font-rubik text-left">Innovative Solution</h2>
+                <p class="text-base sm:text-lg md:text-md lg:text-xl font-rubik text-left">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+            </div>
+
+            <!-- Box 2 -->
+            <div id="box-2" class="border border-line rounded-lg shadow-lg text-black p-4 bg-white">
+                <img src="img/F2.png" alt="Fully functional" class="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 h-auto mb-4" />
+                <h2 class="text-base sm:text-lg md:text-xl lg:text-3xl font-bold font-rubik text-left">Fully functional</h2>
+                <p class="text-base sm:text-lg md:text-md lg:text-xl font-rubik text-left">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+            </div>
+
+            <!-- Box 3 -->
+            <div id="box-3" class="border border-line rounded-lg shadow-lg text-black p-4 bg-white">
+                <img src="img/F3.png" alt="Supporting" class="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-24 h-auto mb-4" />
+                <h2 class="text-base sm:text-lg md:text-xl lg:text-3xl font-bold font-rubik text-left">Supporting</h2>
+                <p class="text-base sm:text-lg md:text-md lg:text-xl font-rubik text-left">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="slide-4" class="bg-blue-950 max-w-full text-black p-8 md:p-6 lg:p-4 flex flex-row">
+        <img src="img/ip12-bg-blue.png" alt="img-9" class="w-full max-w-lg hidden lg:block">
+        <div id="content" class="flex flex-col items-start justify-center text-left p-12 gap-4">
+            <h1 class="text-base sm:text-lg md:text-2xl lg:text-4xl font-bold font-rubik text-left text-white">Air simplifies the organization of your web applications </h1>
+            <p class="text-base sm:text-lg md:text-xl lg:text-2xl font-rubik text-left text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+            <div id="list-item" class="flex flex-col md:flex-row gap-6">
+                <!-- item-1 -->
+                <div id="item-1" class="flex items-start gap-4">
+                    <img src="img/item-1.png" alt="img-10" class="w-12 h-12 object-contain" />
+                    <div>
+                        <h1 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-roboto text-left text-white">
+                            Social Share
+                        </h1>
+                        <p class="text-base sm:text-lg md:text-xl lg:text-2xl font-roboto text-left text-white">
+                            Semper a augue suscipit, luctus neque purus ipsum neque dolor primis libero tempus velna culpa expedita.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- item-2 -->
+                <div id="item-2" class="flex items-start gap-4">
+                    <img src="img/item-2.png" alt="img-11" class="w-12 h-12 object-contain" />
+                    <div>
+                        <h1 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-roboto text-left text-white">
+                            Secure Integration
+                        </h1>
+                        <p class="text-base sm:text-lg md:text-xl lg:text-2xl font-roboto text-left text-white">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eroselna culpa expedita.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="slide-5" class="bg-white w-full text-black p-4 md:p-8 flex flex-col lg:flex-row items-center justify-between">
+        <div id="content-2" class="flex flex-col gap-3 lg:w-[50%] p-12">
+            <div class="flex flex-col gap-2">
+                <h1 class="text-xl md:text-2xl lg:text-4xl font-bold font-rubik text-left">
+                    Keeping track of your expenses is made easy with this app
+                </h1>
+                <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                </p>
+            </div>
+            <div id="list-items" class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <img src="img/check-circle.png" alt="check icon" class="w-5 h-5" />
+                        <h1 class="text-xl md:text-xl lg:text-xl font-bold font-rubik text-left">
+                            Carefully designed
+                        </h1>
+                    </div>
+                    <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left pl-8">
+                        Mucker plastered bugger all mate morish are eroselna culpa expedita.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <img src="img/check-circle.png" alt="check icon" class="w-5 h-5" />
+                        <h1 class="text-xl md:text-xl lg:text-2xl font-bold font-rubik text-left">
+                            Choose a App
+                        </h1>
+                    </div>
+                    <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left pl-8">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse varius.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <img src="img/check-circle.png" alt="check icon" class="w-5 h-5" />
+                        <h1 class="text-xl md:text-xl lg:text-xl font-bold font-rubik text-left">
+                            Seamless Sync
+                        </h1>
+                    </div>
+                    <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left pl-8">
+                        Mucker plastered bugger all mate morish are eroselna culpa expedita.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <img src="img/check-circle.png" alt="check icon" class="w-5 h-5" />
+                        <h1 class="text-xl md:text-xl lg:text-xl font-bold font-rubik text-left">
+                            User Interactive
+                        </h1>
+                    </div>
+                    <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left pl-8">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse varius.
+                    </p>
+                </div>
+            </div>
+            <div id="button-content">
+                <button class="mt-4 px-6 py-3 bg-white border border-line border-color-blue rounded-xl hover:bg-blue-600 transition font-roboto text-lg text-blue-600 border-blue-600 hover:text-white">
+                    Learn More
+                </button>
+            </div>
+
+        </div>
+        <div class="relative hidden lg:block w-[50%]  px-8 py-12">
+            <img src="img/background.png" alt="Background Brush" class="w-[100%]" />
+            <img src="img/iPhone 12 Pro mockup.png" alt="iPhone 12 Pro Mockup" class="absolute top-1/3 left-[60%] w-[50%] h-[120%] transform -translate-x-1/2 -translate-y-1/2 rotate-[10deg] drop-shadow-2xl" />
+        </div>
+    </section>
+    <section id="slide-6" class="bg-teal-50 max-w-full  text-black p-8 md:p-6 lg:p-4 gap-3 flex flex-col justify-center items-center">
+        <div id="content-3" class="flex flex-col justify-center items-center p-3 gap-4 lg:w-[80%]">
+            <h1 class="text-base sm:text-lg md:text-2xl lg:text-4xl font-bold font-rubik text-center">Simple, easy pricing plans for the application</h1>
+            <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut .</p>
+        </div>
+        <div id="content-4" class="flex flex-col lg:flex-row gap-6 p-8">
+            <div id="card-1" class="gap-3 p-3 bg-white border border-line">
+                <div id="title-card" class="gap-3 p-3">
+                    <div id="content-title-card" class="flex flex-row">
+                        <h1 class="text-base sm:text-lg md:text-2xl lg:text-4xl font-bold font-rubik text-left">$19</h1>
+                        <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left pl-8 pt-2">/month</p>
+                    </div>
+                    <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left">All the basic features to boost your freelance career</p>
+                </div>
+                <div id="content-card" class="flex flex-col gap-4 p-3 border-t-2 border-blue-500 text-base sm:text-sm md:text-lg lg:text-xl font-rubik">
+                    <p class="flex items-center gap-2 "><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" />Full Access to Landingfolio <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                    <p class="flex items-center gap-2 "><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" />100 GB Free Storage <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                    <p class="flex items-center gap-2 "><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" />Unlimited Visitors <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                    <p class="flex items-center gap-2 "><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" />10 Agents <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                    <p class="flex items-center gap-2 "><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" />Live Chat Support <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                </div>
+                <div id="button-card" class="flex  justify-center">
+                    <button class="mt-4 px-6 py-3 bg-white border border-line border-color-blue hover:bg-blue-600 transition font-roboto text-lg text-blue-600 border-blue-600 hover:text-white">
+                    Get 14 Days Free Trial
+                    </button>
+                </div>
+            </div>
+            <div id="card-2" class="gap-3 p-3 bg-white border border-line">
+                <div id="title-card" class="gap-3 p-3">
+                    <div id="content-title-card" class="flex flex-row">
+                        <h1 class="text-base sm:text-lg md:text-2xl lg:text-4xl font-bold font-rubik text-left">$99</h1>
+                        <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left pl-8 pt-2">/month</p>
+                    </div>
+                    <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left">All the basic features to boost your freelance career</p>
+                </div>
+                <div id="content-card" class="flex flex-col gap-4 p-3 border-t-2 border-blue-500 text-base sm:text-sm md:text-lg lg:text-xl font-rubik">
+                    <p class="flex items-center gap-2"><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" /> Full Access to Landingfolio <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                    <p class="flex items-center gap-2"><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" />100 GB Free Storage <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                    <p class="flex items-center gap-2"><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" />Unlimited Visitors <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                    <p class="flex items-center gap-2"><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" />10 Agents <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                    <p class="flex items-center gap-2"><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" />Live Chat Support <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                </div>
+                <div id="button-card" class="flex  justify-center">
+                    <button class="mt-4 px-6 py-3 bg-blue-600 border border-line border-color-blue hover:bg-white transition font-roboto text-lg text-white border-white hover:text-blue-600">
+                    Get 14 Days Free Trial
+                    </button>
+                </div>
+            </div>
+            <div id="card-3" class="gap-3 p-3 bg-white border border-line">
+                <div id="title-card" class="gap-3 p-3">
+                    <div id="content-title-card" class="flex flex-row">
+                        <h1 class="text-base sm:text-lg md:text-2xl lg:text-4xl font-bold font-rubik text-left">$49</h1>
+                        <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left pl-8 pt-2">/month</p>
+                    </div>
+                    <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left">All the basic features to boost your freelance career</p>
+                </div>
+                <div id="content-card" class="flex flex-col gap-4 p-3 border-t-2 border-blue-500 text-base sm:text-sm md:text-lg lg:text-xl font-rubik">
+                    <p class="flex items-center gap-2"><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" />Full Access to Landingfolio <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                    <p class="flex items-center gap-2"><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" />100 GB Free Storage <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                    <p class="flex items-center gap-2"><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" />Unlimited Visitors <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                    <p class="flex items-center gap-2"><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" />10 Agents <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                    <p class="flex items-center gap-2"><img src="svg/solid.svg" alt="solid Icon" class="w-4 h-4" />Live Chat Support <img src="svg/outline.svg" alt="outline Icon" class="w-4 h-4"></p>
+                </div>
+                <div id="button-card" class="flex  justify-center">
+                    <button class="mt-4 px-6 py-3 bg-white border border-line border-color-blue hover:bg-blue-600 transition font-roboto text-lg text-blue-600 border-blue-600 hover:text-white">
+                    Get 14 Days Free Trial
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="slide-7" class="bg-white max-w-full text-black p-8 md:p-6 lg:p-4 flex flex-col justify-center items-center gap-3">
+        <div id="title-slide" class="flex flex-col justify-center gap-4">
+            <h1 class="text-xl md:text-2xl lg:text-4xl font-bold font-rubik text-center">Customer testimonials</h1>
+            <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div id="content-slide-7" class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8 p-4 ">
+            <!-- Bessie Cooper -->
+            <div id="info-1" class="border border-line rounded-lg shadow-lg gap-4 p-8">
+                <div id="star-icon" class="flex flex-row">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                </div>
+                <div id="content-slide-7" class="gap-3 p-2">
+                    <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare duis cursus, mi quis viverra."</p>
+                </div>
+                <div id="avatar-1" class="flex items-center gap-4">
+                    <img src="img/Bessie Cooper.png" alt="avt" class="w-12 h-12 rounded-full object-cover">
+                    <div id="name-bessie" class="gap-4">
+                        <h1 class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik font-bold">Bessie Cooper</h1>
+                        <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik">Position, Company name</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Ronald Richards -->
+            <div id="info-2" class="border border-line rounded-lg shadow-lg gap-4 p-8">
+                <div id="star-icon" class="flex flex-row">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                </div>
+                <div id="content-slide-7" class="gap-3 p-2">
+                    <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."</p>
+                </div>
+                <div id="avt-2" class="flex items-center gap-4">
+                    <img src="img/Ronald Richards.png" alt="avt" class="w-12 h-12 rounded-full object-cover">
+                    <div class="name-ronal" class="gap-4">
+                        <h1 class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik font-bold">Ronald Richards</h1>
+                        <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik">Position, Company name</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Robert Fox -->
+            <div id="info-3" class="border border-line rounded-lg shadow-lg gap-4 p-8">
+                <div id="star-icon" class="flex flex-row">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                </div>
+                <div id="content-slide-7" class="gap-3 p-2">
+                    <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare duis cursus, mi quis viverra."</p>
+                </div>
+                <div id="avt-3" class="flex items-center gap-4">
+                    <img src="img/Robert Fox.png" alt="avt" class="w-12 h-12 rounded-full object-cover">
+                    <div id="name-robert" class="gap-4">
+                        <h1 class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik font-bold">Robert Fox</h1>
+                        <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik">Position, Company name</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Marvin McKinney -->
+            <div id="info-4" class="border border-line rounded-lg shadow-lg gap-4 p-8">
+                <div id="star-icon" class="flex flex-row">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                </div>
+                <div id="content-slide-7" class="gap-3 p-2">
+                    <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."</p>
+                </div>
+                <div id="avt-4" class="flex items-center gap-4">
+                    <img src="img/Marvin McKinney.png" alt="avt" class="w-12 h-12 rounded-full object-cover">
+                    <div id="name-marvin" class="gap-4">
+                        <h1 class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik font-bold">Marvin McKinney</h1>
+                        <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik">Position, Company name</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Esther Howard -->
+            <div id="info-5" class="border border-line rounded-lg shadow-lg gap-4 p-8">
+                <div id="star-icon" class="flex flex-row">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                </div>
+                <div id="content-slide-7" class="gap-3 p-2">
+                    <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare duis cursus, mi quis viverra."</p>
+                </div>
+                <div id="avt-5" class="flex items-center gap-4">
+                    <img src="img/Esther Howard.png" alt="avt" class="w-12 h-12 rounded-full object-cover">
+                    <div id="name-esther" class="gap-4">
+                        <h1 class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik font-bold">Esther Howard</h1>
+                        <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik">Position, Company name</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Jerome Bell -->
+            <div id="info-6" class="border border-line rounded-lg shadow-lg gap-4 p-8">
+                <div id="star-icon" class="flex flex-row">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                    <img src="svg/star.svg" alt="star" class="w-4 h-4">
+                </div>
+                <div id="content-slide-7" class="gap-3 p-2">
+                    <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare duis cursus, mi quis viverra."</p>
+                </div>
+                <div id="avt-6" class="flex items-center gap-4">
+                    <img src="img/Jerome Bell.png" alt="avt" class="w-12 h-12 rounded-full object-cover">
+                    <div id="name-jerome" class="gap-4">
+                        <h1 class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik font-bold">Jerome Bell</h1>
+                        <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik">Position, Company name</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="slide-8" class="bg-sky-600 max-w-full text-white p-8 md:p-12 lg:p-16 flex flex-col justify-center gap-3">
+        <div id="content-slide-8" class="flex flex-col justify-center  gap-2 p-3">
+            <h1 class="text-base sm:text-xl md:text-2xl lg:text-4xl font-bold font-rubik text-center">
+                Download our app for free
+            </h1>
+            <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare duis cursus, mi quis viverra.
+            </p>
+        </div>
+        <div id="input" class="flex flex-col md:flex-row justify-center items-center gap-3">
+            <input type="text" placeholder="Enter your email" class="text-black text-base w-full md:w-80 lg:w-96 h-12 border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+            <button class="w-48 h-12 px-6 py-3 bg-orange-400 border border-line border-color-blue rounded-xl hover:bg-white transition font-rubik text-lg text-white border-orange-400 hover:text-orange-400">
+                Dowload App
+            </button>
+        </div>
+        <div id="form" class="pt-4">
+            <p class="text-base sm:text-sm md:text-lg lg:text-xl font-robonto text-center">By clicking Sign Up you're confirming that you agree with our <a href="#" class="text-white font-roboto underline hover:no-underline">Terms and Conditions</a>.</p>
+        </div>
+    </section>
+    <section id="slide-9" class="bg-blue-950 max-w-full text-black p-8 md:p-6 lg:p-8 flex flex-col justify-center gap-6">
+        <div id="footer-content" class="flex flex-col lg:flex-row flex-wrap gap-24 px-2 py-8">
+            <div id="widget-1" class="flex flex-col justify-center gap-5">
+                <h1 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-rubik text-left text-white">Company</h1>
+                <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-white">About</p>
+                <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-white">Features</p>
+                <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-white">Works</p>
+                <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-white">Career</p>
+            </div>
+            <div id="widget-2" class="flex flex-col justify-center gap-5">
+                <h1 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-rubik text-left text-white">Help</h1>
+                <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-white">Customer Support</p>
+                <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-white">Delivery Details</p>
+                <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-white">Terms & Conditions</p>
+                <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-white">Privacy Policy</p>
+            </div>
+            <div id="widget-3" class="flex flex-col justify-items-start gap-5">
+                <h1 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-rubik text-left text-white">Resources</h1>
+                <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-white">Free eBooks</p>
+                <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-white">Development Tutorial</p>
+                <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-white">How to - Blog</p>
+                <p class="text-base sm:text-sm md:text-lg lg:text-xl font-rubik text-white">Youtube Playlist</p>
+            </div>
+            <div id="widget-4" class="flex flex-col justify-items-start gap-3">
+                <h1 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-rubik text-left text-white">Install App</h1>
+                <div id="img-button" class="flex flex-col justify-start gap-3">
+                    <img src="img/app store.png" alt="img-bt-appstore" class=" w-32 h-auto sm:w-36 md:w-40 lg:w-44 xl:w-48 transition-all duration-300">
+                    <img src="img/gg play.png" alt="img-bt-ggpl" class=" w-32 h-auto sm:w-36 md:w-40 lg:w-44 xl:w-48 transition-all duration-300 ">
+                </div>
+            </div>
+        </div>
+        <div id="bottom-content" class="flex flex-col lg:flex-row border-t border-gray-300 gap-10 justify-around ">
+            <div id="copyright">
+                <p class="text-base sm:text-xs md:text-sm lg:text-sm font-rubik text-left text-white">© Copyright 2022, Made with 💖 by <a href="#" class="text-white font-rubik underline hover:no-underline">Airdokan</a> and Powered by Webflow</p>
+            </div>
+            <div id="bottom-img-icon" class="flex flex-row lg:flex-row gap-4">
+                <img src="img/twitter.png" alt="twitter" class="w-8 h-8">
+                <img src="img/fb.png" alt="fb" class="w-8 h-8">
+                <img src="img/ins.png" alt="ins" class="w-8 h-8">
+                <img src="img/github.png" alt="github" class="w-8 h-8">
+            </div>
+
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+</html>

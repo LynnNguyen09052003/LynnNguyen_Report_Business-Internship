@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Oẳn Tù Tì</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="result">
+            <div class="result-img">
+                <span class="result-user">
+          <img src="img/question.png" alt="" />
+        </span>
+                <span class="result-npc">
+          <img src="img/question.png" alt="" />
+        </span>
+            </div>
+        </div>
+
+        <p class="result-text">Hãy chọn Rock, Paper hoặc Scissors!</p>
+
+        <button class="btn">Reset</button>
+
+        <div class="options_img">
+            <div class="options" data-choice="rock">
+                <img src="img/rock.png" alt="" />
+                <p>Rock</p>
+            </div>
+            <div class="options" data-choice="paper">
+                <img src="img/paper.png" alt="" />
+                <p>Paper</p>
+            </div>
+            <div class="options" data-choice="scissors">
+                <img src="img/scissors.png" alt="" />
+                <p>Scissors</p>
+            </div>
+        </div>
+        <div class="score">
+            <p>YouWins: <span id="userScore">0</span></p>
+            <p>PcWins: <span id="pcScore">0</span></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

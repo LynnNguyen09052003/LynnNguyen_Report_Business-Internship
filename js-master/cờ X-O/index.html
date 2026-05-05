@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>----X.O----</h1>
+    <div id="scoreboard">
+        <div id="member">
+            <p>X Wins: <span id="xScore">0</span></p>
+            <p>O Wins: <span id="oScore">0</span></p>
+        </div>
+        <button onclick="resetScore()" id="resetScore">Reset Score</button>
+    </div>
+    <div class="container">
+        <table>
+            <tr>
+                <td id="box-1"></td>
+                <td id="box-2"></td>
+                <td id="box-3"></td>
+            </tr>
+            <tr>
+                <td id="box-4"></td>
+                <td id="box-5"></td>
+                <td id="box-6"></td>
+            </tr>
+            <tr>
+                <td id="box-7"></td>
+                <td id="box-8"></td>
+                <td id="box-9"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="message" id="message"></div>
+    <div class="controls">
+        <button onclick="resetBoard()">PLAY</button>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

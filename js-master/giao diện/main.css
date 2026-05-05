@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+}
+
+body {
+    padding: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: solid 1px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+form#loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.pass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.form input#username {
+    border-radius: 10px;
+    background-color: white;
+}
+
+.form input#password {
+    border-radius: 10px;
+    background-color: white;
+}
+
+.form input#username:hover {
+    background-color: rgb(239, 235, 235);
+    box-shadow: 0 0 5px;
+}
+
+.form input#password:hover {
+    background-color: rgb(239, 235, 235);
+    box-shadow: 0 0 5px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+button.log {
+    width: 50%;
+    font-size: 16px;
+    background-color: aqua;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.log:hover {
+    background-color: beige;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.5s ease;
+    cursor: pointer;
+}
+
+button.rgt {
+    width: 50%;
+    font-size: 16px;
+    background-color: aqua;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.rgt:hover {
+    background-color: beige;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.5s ease;
+    cursor: pointer;
+}

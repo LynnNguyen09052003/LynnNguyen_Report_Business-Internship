@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+button#logout {
+    width: 180px;
+    font-size: 16px;
+    background-color: aqua;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+button#logout:hover {
+    background-color: beige;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.5s ease;
+    cursor: pointer;
+}
+
+button#next {
+    width: 180px;
+    font-size: 16px;
+    background-color: aqua;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+button#next:hover {
+    background-color: beige;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.5s ease;
+    cursor: pointer;
+}
